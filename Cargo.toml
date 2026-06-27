@@ -1,0 +1,14 @@
+[package]
+name = "watcher"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+notify = "8.2.0"
+openssl = { version = "0.10.81", features = ["vendored"] }
+ssh2 = "0.9.5"
+walkdir = "2.5.0"
+zip = "8.6.0"
+
+[profile.release]
+panic = "abort"
